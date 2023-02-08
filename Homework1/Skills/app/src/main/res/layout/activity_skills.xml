@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5B9E74">
+
+    <TextView android:id="@+id/selection"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:text="Отметьте Ваши навыки"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:id="@+id/java"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textSize="30dp"
+        android:textColor="#1C37CC"
+        app:layout_constraintTop_toBottomOf="@id/selection"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="120dp"
+        ></CheckBox>
+
+    <CheckBox
+        android:id="@+id/xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XML"
+        android:textSize="30dp"
+        android:textColor="#1C37CC"
+        app:layout_constraintTop_toBottomOf="@id/java"
+        android:layout_marginStart="120dp"
+        ></CheckBox>
+
+    <CheckBox
+        android:id="@+id/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="30dp"
+        android:textColor="#1C37CC"
+        app:layout_constraintTop_toBottomOf="@id/xml"
+        android:layout_marginStart="120dp"
+        ></CheckBox>
+
+    <TextView
+        android:id="@+id/textJava"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:layout_marginStart="120dp"
+        android:text="Java"
+        android:textColor="#124214"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/android"></TextView>
+
+    <TextView
+        android:id="@+id/textXML"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:layout_marginStart="120dp"
+        android:text="XML"
+        android:textColor="#124214"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textJava"></TextView>
+
+    <TextView
+        android:id="@+id/textAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:layout_marginStart="120dp"
+        android:text="Android"
+        android:textColor="#124214"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textXML"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
